@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" >
+          <div class="cost">
+            <label for="source_place">Source Place</label>
+            <input type="text" [(ngModel)]="formData.source_place" class="form-control" id="" 
+            name="source_place" placeholder="Enter Source" required>
+          </div>
+          <div class="cost">
+            <label for="destination_place">Destination Place</label>
+            <input type="text" [(ngModel)]="formData.destination_place" class="form-control" id="destination_place" 
+            name="destination_place" placeholder="Enter Destination" required>
+          </div>
+          <div class="cost">
+            <label for="day">No of Days</label>
+            <input type="number" [(ngModel)]="formData.day" class="form-control" id="day" 
+            name="day" placeholder="Enter days" required>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+      <p>Amount: {{ amount }}</p>
+    </div>
+  </div>

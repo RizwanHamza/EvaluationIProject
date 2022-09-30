@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>package_id</th>
+          <th>source_place</th>
+          <th>basic_fare</th>
+          <th>destination_place</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pack of tpackages">
+          <td>{{ pack.package_id }}</td>
+          <td>{{ pack.source_place }}</td>
+          <td>{{ pack.basic_fare }}</td>
+          <td>{{ pack.destination_place}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
